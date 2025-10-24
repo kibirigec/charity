@@ -17,21 +17,32 @@ export default function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-20">
-        <div className="grid gap-10 md:grid-cols-2">
-          <div>
-            <h2 className="text-xl font-semibold">Send a message</h2>
-            <form className="mt-4 space-y-4">
-              <input className="w-full rounded-md border border-gray-300 px-4 py-3" placeholder="Full name" />
-              <input className="w-full rounded-md border border-gray-300 px-4 py-3" placeholder="Email" type="email" />
-              <textarea className="w-full rounded-md border border-gray-300 px-4 py-3" placeholder="Message" rows={5} />
-              <button className="inline-flex items-center rounded bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white hover:opacity-90" type="button">Send</button>
-            </form>
-          </div>
-          <div className="space-y-4">
-            <h2 className="text-xl font-semibold">Information</h2>
-            <p className="text-gray-700">Email: info@example.org</p>
-            <p className="text-gray-700">Phone: +1 (555) 555-5555</p>
-            <p className="text-gray-700">Address: 123 Community Way, City, Country</p>
+        <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+          <div className="grid gap-0 md:grid-cols-2">
+            {/* Left: info panel */}
+            <div className="bg-gray-50 p-6 md:p-8">
+              <h2 className="text-xl font-semibold">Contact information</h2>
+              <p className="mt-2 text-sm text-gray-600">We typically respond within 1–2 business days.</p>
+              <dl className="mt-6 space-y-2 text-sm text-gray-700">
+                <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Email</dt><dd className="font-medium">info@example.org</dd></div>
+                <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Phone</dt><dd className="font-medium">+1 (555) 555-5555</dd></div>
+                <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Address</dt><dd className="font-medium">123 Community Way, City, Country</dd></div>
+              </dl>
+            </div>
+            {/* Right: form panel */}
+            <div className="p-6 md:p-8">
+              <h2 className="text-xl font-semibold">Send us a message</h2>
+              <form className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <input className="col-span-1 rounded-md border border-gray-300 px-4 py-3" placeholder="First name" />
+                <input className="col-span-1 rounded-md border border-gray-300 px-4 py-3" placeholder="Last name" />
+                <input className="sm:col-span-2 rounded-md border border-gray-300 px-4 py-3" placeholder="Email address" type="email" />
+                <input className="sm:col-span-2 rounded-md border border-gray-300 px-4 py-3" placeholder="Subject" />
+                <textarea className="sm:col-span-2 rounded-md border border-gray-300 px-4 py-3" placeholder="Message" rows={6} />
+                <div className="sm:col-span-2">
+                  <button className="inline-flex w-full items-center justify-center rounded-md bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow hover:opacity-90" type="button">Send message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

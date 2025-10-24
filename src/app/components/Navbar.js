@@ -64,11 +64,12 @@ export default function Navbar() {
             </span>
           </button>
           <nav className={`hidden md:flex items-center gap-8 text-sm ${scrolled ? 'text-gray-900/90' : 'text-white/90'}`}>
+            <Link href="/" className="hover:opacity-90 transition">Home</Link>
             <div className="relative" ref={aboutRef}>
               <button
                 type="button"
                 onClick={() => setOpen(v => !v)}
-                className="inline-flex items-center gap-1 hover:text-white transition"
+                className="inline-flex items-center gap-1 transition"
                 aria-haspopup="menu"
                 aria-expanded={open}
               >
@@ -83,9 +84,9 @@ export default function Navbar() {
                 </svg>
               </button>
               {open && (
-                <div className="absolute left-0 mt-3 min-w-[240px] overflow-hidden rounded-lg bg-white/95 p-2 text-gray-900 shadow-lg backdrop-blur pointer-events-auto">
-                  <Link href="/about" onClick={() => setOpen(false)} className="block rounded px-3 py-2 text-sm hover:bg-gray-50">About God's Gifts Foundation</Link>
-                  <Link href="/people-behind" onClick={() => setOpen(false)} className="block rounded px-3 py-2 text-sm hover:bg-gray-50">People Behind</Link>
+                <div className="absolute left-0 mt-3 min-w-[240px] overflow-hidden rounded-lg bg-white p-2 text-gray-900 shadow-lg pointer-events-auto">
+                  <Link href="/about" onClick={() => setOpen(false)} className="block rounded px-3 py-2 text-sm hover:bg-gray-100">About God's Gifts Foundation</Link>
+                  <Link href="/people-behind" onClick={() => setOpen(false)} className="block rounded px-3 py-2 text-sm hover:bg-gray-100">People Behind</Link>
                 </div>
               )}
             </div>

@@ -10026,6 +10026,9 @@ html { scroll-behavior: smooth; }
   transform: translateX(calc(-1 * var(--drawer-shift))) scale(var(--scale-factor));
 }
 
+/* Hide floating donate button when a page opts out */
+body:has([data-hide-sticky]) .floating-donate { display: none; }
+
 
 
 

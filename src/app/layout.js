@@ -19,6 +19,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased overflow-x-hidden`}
       >
+        <a href="/donate" className="floating-donate fixed bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:bottom-6 z-[60] inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition">
+          Donate Now
+        </a>
         <Navbar />
         {/* legacy header retained below for reference; remove if not needed */}
         <header className="hidden absolute left-0 right-0 top-0 z-20">
@@ -46,9 +49,6 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <div className="site-content transition-transform duration-300 ease-out will-change-transform">
-        <a href="/donate" className="fixed bottom-5 right-5 z-[60] md:bottom-6 md:right-6 inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition">
-          Donate Now
-        </a>
           {children}
           <footer id="contact" className="border-t border-gray-100 bg-gray-50">
           <div className="mx-auto max-w-7xl px-6 py-12">

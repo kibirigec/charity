@@ -2,7 +2,7 @@ export const metadata = { title: "Donate – God's Gifts" };
 
 export default function DonatePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-white text-gray-900" data-hide-sticky>
       {/* Banner */}
       <section className="relative min-h-[70vh] w-full overflow-hidden">
         <img

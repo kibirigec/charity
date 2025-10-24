@@ -46,6 +46,13 @@ export default function PeopleBehindPage() {
           Interested in joining or volunteering? Contact us at <span className="font-medium">people@example.org</span>.
         </div>
       </section>
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center">
+          <h3 className="text-xl font-semibold">Back the people behind the work</h3>
+          <p className="mt-2 text-gray-600">Your support equips our team to reach more families.</p>
+          <a href="/donate" className="mt-4 inline-flex items-center justify-center rounded-full bg-[var(--lavender)] px-6 py-3 text-sm font-semibold text-white shadow hover:opacity-90">Donate Now</a>
+        </div>
+      </section>
     </main>
   );
 }

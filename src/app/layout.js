@@ -46,6 +46,9 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <div className="site-content transition-transform duration-300 ease-out will-change-transform">
+        <a href="/donate" className="fixed bottom-5 right-5 z-[60] md:bottom-6 md:right-6 inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition">
+          Donate Now
+        </a>
           {children}
           <footer id="contact" className="border-t border-gray-100 bg-gray-50">
           <div className="mx-auto max-w-7xl px-6 py-12">

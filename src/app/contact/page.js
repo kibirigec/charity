@@ -35,6 +35,13 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <section className="mx-auto max-w-5xl px-6 pb-16">
+        <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center">
+          <h3 className="text-xl font-semibold">Prefer to support directly?</h3>
+          <p className="mt-2 text-gray-600">Every contribution keeps programs running and families thriving.</p>
+          <a href="/donate" className="mt-4 inline-flex items-center justify-center rounded-full bg-[var(--lavender)] px-6 py-3 text-sm font-semibold text-white shadow hover:opacity-90">Donate Now</a>
+        </div>
+      </section>
     </main>
   );
 }

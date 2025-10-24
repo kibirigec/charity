@@ -7,13 +7,13 @@ export default function ImpactPage() {
         <img
           src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
           alt="Impact"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Impact</h1>
-            <p className="mt-4 max-w-2xl text-white/90 mx-auto">Together with our partners, we build long-term change that strengthens communities.</p>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">Impact</h1>
+            <p className="mt-4 max-w-2xl text-white/90 mx-auto anim-fade-up anim-delay-100">Together with our partners, we build long-term change that strengthens communities.</p>
           </div>
         </div>
       </section>

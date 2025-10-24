@@ -7,12 +7,12 @@ export default function ContactPage() {
         <img
           src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1600&auto=format&fit=crop"
           alt="Contact"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Contact</h1>
-          <p className="mt-4 max-w-2xl text-white/90">Reach out to our team. We’d love to hear from you.</p>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">Contact</h1>
+          <p className="mt-4 max-w-2xl text-white/90 anim-fade-up anim-delay-100">Reach out to our team. We’d love to hear from you.</p>
         </div>
       </section>
 

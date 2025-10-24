@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased overflow-x-hidden`}
       >
-        <a href="/donate" className="floating-donate fixed bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:bottom-6 z-[60] inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition">
+        <a href="/donate" className="floating-donate fixed bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:bottom-6 z-[60] inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition animate-float">
           Donate Now
         </a>
         <Navbar />

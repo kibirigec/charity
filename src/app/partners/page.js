@@ -8,13 +8,13 @@ export default function PartnersPage() {
         <img
           src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
           alt="Partners"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Partners</h1>
-            <p className="mt-4 max-w-2xl text-white/90 mx-auto">We collaborate with organizations and individuals who share our commitment to human dignity.</p>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">Partners</h1>
+            <p className="mt-4 max-w-2xl text-white/90 mx-auto anim-fade-up anim-delay-100">We collaborate with organizations and individuals who share our commitment to human dignity.</p>
           </div>
         </div>
       </section>

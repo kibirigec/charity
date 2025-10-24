@@ -12,14 +12,14 @@ export default function Home() {
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-start justify-center px-4 md:px-6">
-          <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white">
+          <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white anim-fade-up">
             Empowering communities with dignity, opportunity, and hope
           </h1>
-          <p className="mt-4 max-w-2xl text-sm sm:text-base text-white/90 md:text-lg">
+          <p className="mt-4 max-w-2xl text-sm sm:text-base text-white/90 md:text-lg anim-fade-up anim-delay-100">
             Together we create sustainable solutions in education, health, and economic resilience—so every child and family can thrive.
           </p>
           <div className="mt-8">
-            <a href="/donate" className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-[var(--lavender)] px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold text-white shadow-xl ring-1 ring-white/10 hover:opacity-90 transition">
+            <a href="/donate" className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-[var(--lavender)] px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold text-white shadow-xl ring-1 ring-white/10 hover:opacity-90 transition anim-fade-up anim-delay-200">
               Donate Now
             </a>
           </div>

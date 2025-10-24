@@ -7,13 +7,13 @@ export default function AboutPage() {
         <img
           src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1600&auto=format&fit=crop"
           alt="Community"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">About us</h1>
-            <p className="mt-4 max-w-2xl text-white/90 mx-auto">We are a people-centered nonprofit dedicated to dignity, opportunity, and resilience. Our work is rooted in partnership and lasting local impact.</p>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">About us</h1>
+            <p className="mt-4 max-w-2xl text-white/90 mx-auto anim-fade-up anim-delay-100">We are a people-centered nonprofit dedicated to dignity, opportunity, and resilience. Our work is rooted in partnership and lasting local impact.</p>
           </div>
         </div>
       </section>

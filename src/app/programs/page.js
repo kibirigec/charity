@@ -25,13 +25,13 @@ export default function ProgramsPage() {
         <img
           src="https://images.unsplash.com/photo-1554774853-b415df9eeb92?q=80&w=1600&auto=format&fit=crop"
           alt="Programs"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Programs</h1>
-            <p className="mt-4 max-w-2xl text-white/90 mx-auto">We deliver holistic programs that empower children and families to thrive.</p>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">Programs</h1>
+            <p className="mt-4 max-w-2xl text-white/90 mx-auto anim-fade-up anim-delay-100">We deliver holistic programs that empower children and families to thrive.</p>
           </div>
         </div>
       </section>

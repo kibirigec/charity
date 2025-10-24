@@ -41,7 +41,7 @@ export default function DonatePage() {
           <div className="rounded-2xl border border-gray-200 p-6 shadow-sm">
             <h3 className="text-lg font-semibold">Bank transfer</h3>
             <dl className="mt-3 space-y-2 text-sm text-gray-700">
-              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Account name</dt><dd className="font-medium text-gray-900">Nyaka-Inspired Foundation</dd></div>
+              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Account name</dt><dd className="font-medium text-gray-900">God's Gifts</dd></div>
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Bank</dt><dd className="font-medium text-gray-900">Example Community Bank</dd></div>
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Account / IBAN</dt><dd className="font-mono">XXXX-XXXX-XXXX</dd></div>
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">SWIFT / BIC</dt><dd className="font-mono">XXXXXX</dd></div>
@@ -54,7 +54,7 @@ export default function DonatePage() {
             <h3 className="text-lg font-semibold">MTN MoMo</h3>
             <dl className="mt-3 space-y-2 text-sm text-gray-700">
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Number</dt><dd className="font-mono">+256 7XX XXX XXX</dd></div>
-              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Name</dt><dd className="font-medium text-gray-900">Nyaka-Inspired Foundation</dd></div>
+              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Name</dt><dd className="font-medium text-gray-900">God's Gifts</dd></div>
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Reference</dt><dd className="font-medium text-gray-900">Donation</dd></div>
             </dl>
           </div>
@@ -65,7 +65,7 @@ export default function DonatePage() {
             <dl className="mt-3 space-y-2 text-sm text-gray-700">
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Merchant code</dt><dd className="font-mono">XXXXXX</dd></div>
               <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Number</dt><dd className="font-mono">+256 7XX XXX XXX</dd></div>
-              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Name</dt><dd className="font-medium text-gray-900">Nyaka-Inspired Foundation</dd></div>
+              <div className="flex items-start justify-between gap-4"><dt className="text-gray-600">Name</dt><dd className="font-medium text-gray-900">God's Gifts</dd></div>
             </dl>
           </div>
         </div>

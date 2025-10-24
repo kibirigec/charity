@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Effects from "./components/Effects";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <a href="/donate" className="floating-donate fixed bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:bottom-6 z-[60] inline-flex items-center rounded-full bg-[var(--lavender)] px-5 py-3 text-sm font-semibold text-white shadow-xl ring-1 ring-black/5 hover:opacity-90 transition animate-float">
           Donate Now
         </a>
+        <Effects />
         <Navbar />
         {/* legacy header retained below for reference; remove if not needed */}
         <header className="hidden absolute left-0 right-0 top-0 z-20">

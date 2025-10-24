@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
 
         {/* Hero content */}
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-start justify-center px-4 md:px-6">
+        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-start justify-center px-4 md:px-6" data-parallax="0.12">
           <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white anim-fade-up">
             Empowering communities with dignity, opportunity, and hope
           </h1>
@@ -29,14 +29,14 @@ export default function Home() {
       </section>
 
       {/* Programs */}
-      <section id="programs" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+      <section id="programs" className="mx-auto max-w-7xl px-6 py-16 md:py-24" data-reveal>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">What we focus on</h2>
           <p className="mt-3 text-gray-600">
             We invest in people-first solutions that unlock potential and build resilience.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
           {/* Education */}
           <article className="group overflow-hidden rounded-2xl border border-gray-100 shadow-sm transition hover:shadow-md">
             <div className="relative h-48 w-full overflow-hidden">
@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* Impact stripe */}
-      <section id="impact" className="relative">
+      <section id="impact" className="relative" data-reveal>
         <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl px-6">
           <div className="relative isolate overflow-hidden rounded-3xl">
             <img
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Partners */}
-      <section id="partners" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <section id="partners" className="mx-auto max-w-7xl px-6 py-16 md:py-20" data-reveal>
         <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-gray-500">Trusted by caring partners</h3>
         <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-6">
           {[

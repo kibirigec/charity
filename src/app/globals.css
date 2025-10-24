@@ -10050,6 +10050,12 @@ body:has([data-hide-sticky]) .floating-donate { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .animate-kenburns, .animate-float, .anim-fade-up { animation: none !important; }
 }
+/* Reveal animation classes */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+[data-stagger] > * { transition: opacity 600ms ease-out, transform 600ms ease-out; }
+
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 

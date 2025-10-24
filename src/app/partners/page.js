@@ -11,7 +11,7 @@ export default function PartnersPage() {
           className="absolute inset-0 h-full w-full object-cover animate-kenburns"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
+        <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center" data-parallax="0.12">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl anim-fade-up">Partners</h1>
             <p className="mt-4 max-w-2xl text-white/90 mx-auto anim-fade-up anim-delay-100">We collaborate with organizations and individuals who share our commitment to human dignity.</p>

@@ -93,7 +93,7 @@ export default function Navbar() {
             <Link href="/impact" className="hover:opacity-90 transition">Impact</Link>
             <Link href="/partners" className="hover:opacity-90 transition">Partners</Link>
             <Link href="/contact" className="hover:opacity-90 transition">Contact</Link>
-            <Link href="/donate" className={`inline-flex items-center rounded-full px-5 py-2 text-sm font-semibold transition ${scrolled ? 'border border-gray-300 text-gray-900' : 'border border-white/80 text-white'}`}>Donate</Link>
+            <Link href="/donate" className={`inline-flex items-center rounded-full px-5 py-2 text-sm font-semibold transition ${scrolled ? 'border border-gray-300 text-gray-900' : 'border border-white/80 text-white'}`}>Donate Now</Link>
           </nav>
         </div>
       </header>
@@ -124,7 +124,7 @@ export default function Navbar() {
               <Link href="/impact" onClick={() => setMobileOpen(false)} className="block text-lg">Impact</Link>
               <Link href="/partners" onClick={() => setMobileOpen(false)} className="block text-lg">Partners</Link>
               <Link href="/contact" onClick={() => setMobileOpen(false)} className="block text-lg">Contact</Link>
-              <Link href="/donate" onClick={() => setMobileOpen(false)} className="inline-flex items-center rounded-full border px-6 py-3 text-base font-semibold">Donate</Link>
+              <Link href="/donate" onClick={() => setMobileOpen(false)} className="inline-flex items-center rounded-full border px-6 py-3 text-base font-semibold">Donate Now</Link>
             </div>
           </aside>
         </>

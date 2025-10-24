@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               <a href="/impact" className="hover:text-white transition">Impact</a>
               <a href="/partners" className="hover:text-white transition">Partners</a>
               <a href="/contact" className="hover:text-white transition">Contact</a>
-              <a href="/donate" className="inline-flex items-center rounded-full border border-white/80 px-5 py-2 text-sm font-semibold text-white hover:opacity-90 transition">Donate</a>
+              <a href="/donate" className="inline-flex items-center rounded-full border border-white/80 px-5 py-2 text-sm font-semibold text-white hover:opacity-90 transition">Donate Now</a>
             </nav>
           </div>
         </header>
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
               <div>
                 <h4 className="text-sm font-semibold text-gray-900">Get involved</h4>
                 <ul className="mt-3 space-y-2 text-sm text-gray-600">
-                  <li><a href="/donate" className="hover:text-gray-900">Donate</a></li>
+                  <li><a href="/donate" className="hover:text-gray-900">Donate Now</a></li>
                   <li><a href="/get-involved" className="hover:text-gray-900">Volunteer</a></li>
                   <li><a href="/get-involved" className="hover:text-gray-900">Partner</a></li>
                 </ul>

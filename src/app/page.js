@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <a href="/donate" className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-[var(--lavender)] px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold text-white shadow-xl ring-1 ring-white/10 hover:opacity-90 transition">
-              Donate
+              Donate Now
             </a>
           </div>
 

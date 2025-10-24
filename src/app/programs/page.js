@@ -1,129 +1,60 @@
-import Header from '../components/Header';
-import Impact from '../components/Impact';
-import Footer from '../components/Footer';
-
-export const metadata = {
-  title: "Programs - God's Gifts Charity",
-  description: "Explore our education, healthcare, and community development programs making a difference worldwide.",
-};
+export const metadata = { title: "Programs – God's Gifts" };
 
 export default function ProgramsPage() {
   const programs = [
     {
-      title: 'Education for All',
-      description: 'Providing quality education and learning resources',
-      longDescription: 'Our education initiative ensures that children and adults in underserved communities have access to quality learning opportunities. We build schools, provide scholarships, supply educational materials, and train teachers to create sustainable educational ecosystems.',
-      impact: ['10,000+ students supported annually', '50+ schools built or renovated', '500+ teachers trained'],
-      image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2032&auto=format&fit=crop',
+      title: "Education",
+      desc: "Quality learning, scholarships, and mentorship for every child.",
+      img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
     },
     {
-      title: 'Healthcare Access',
-      description: 'Delivering essential medical care and supplies',
-      longDescription: 'We partner with local healthcare providers to deliver medical care, medications, and health education to remote and underserved regions. Our mobile clinics bring healthcare directly to communities that need it most.',
-      impact: ['25,000+ patients treated yearly', '15 mobile clinics operational', 'Vaccination campaigns reaching 100+ villages'],
-      image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop',
+      title: "Health",
+      desc: "Community health services, prevention, and dignified care.",
+      img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop",
     },
     {
-      title: 'Clean Water Initiative',
-      description: 'Providing access to safe, clean drinking water',
-      longDescription: 'Access to clean water is a basic human right. We drill wells, install water purification systems, and teach communities about water conservation and hygiene practices to ensure sustainable access to this vital resource.',
-      impact: ['100+ wells drilled', '50,000+ people with clean water access', '200+ water filtration systems installed'],
-      image: 'https://images.unsplash.com/photo-1603048719539-9ecb4aa395e3?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      title: 'Economic Empowerment',
-      description: 'Supporting sustainable livelihoods',
-      longDescription: 'We provide job training, micro-loans, and business development support to help individuals and families build sustainable livelihoods. Our programs focus on skills development and entrepreneurship.',
-      impact: ['2,000+ businesses started', '$500K+ in micro-loans distributed', '5,000+ people trained in vocational skills'],
-      image: 'https://images.unsplash.com/photo-1497171156029-51dfc973e5f9?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      title: 'Emergency Relief',
-      description: 'Rapid response to disasters and crises',
-      longDescription: 'When disaster strikes, we are there. Our emergency relief teams provide immediate assistance including food, shelter, medical care, and supplies to communities affected by natural disasters or humanitarian crises.',
-      impact: ['50+ emergency responses', '100,000+ people aided in crises', '24/7 rapid response capability'],
-      image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      title: 'Child Sponsorship',
-      description: 'Investing in the future, one child at a time',
-      longDescription: 'Our child sponsorship program provides comprehensive support including education, healthcare, nutrition, and mentorship. Sponsors build meaningful relationships with children while transforming their futures.',
-      impact: ['3,000+ children sponsored', '95% graduation rate', 'Lifelong mentorship connections'],
-      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop',
+      title: "Economic resilience",
+      desc: "Skills training, savings groups, and small business support.",
+      img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* Page Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#9b87f5] to-[#7c3aed] overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}></div>
-        </div>
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">
-            Our Programs
-          </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive initiatives designed to create lasting impact in communities worldwide.
-          </p>
-        </div>
-      </section>
-
-      {/* Programs Grid */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="space-y-24">
-            {programs.map((program, index) => (
-              <div
-                key={index}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                }`}
-              >
-                <div className={index % 2 === 1 ? 'md:order-2' : ''}>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    {program.title}
-                  </h2>
-                  <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                    {program.longDescription}
-                  </p>
-                  <div className="mb-6">
-                    <h3 className="font-bold text-gray-900 mb-3">Impact Highlights:</h3>
-                    <ul className="space-y-2">
-                      {program.impact.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <svg className="w-6 h-6 text-[#9b87f5] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                  <img
-                    src={program.image}
-                    alt={program.title}
-                    className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
-            ))}
+    <main className="min-h-screen bg-white text-gray-900">
+      <section className="relative min-h-[70vh] w-full overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1554774853-b415df9eeb92?q=80&w=1600&auto=format&fit=crop"
+          alt="Programs"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 mx-auto max-w-5xl px-6 flex min-h-[70vh] items-center justify-center text-center">
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Programs</h1>
+            <p className="mt-4 max-w-2xl text-white/90 mx-auto">We deliver holistic programs that empower children and families to thrive.</p>
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
-      <Impact />
-
-      <Footer />
-    </div>
+      <section className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {programs.map((p) => (
+            <article key={p.title} className="overflow-hidden rounded-2xl border border-gray-100 shadow-sm transition hover:shadow-md">
+              <div className="relative h-48 w-full overflow-hidden">
+                <img src={p.img} alt={p.title} className="h-full w-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold">{p.title}</h3>
+                <p className="mt-2 text-sm text-gray-600">{p.desc}</p>
+                <a href="#" className="mt-4 inline-flex items-center text-[var(--lavender)] hover:text-[var(--lavender-muted)]">
+                  Learn more
+                  <svg className="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
